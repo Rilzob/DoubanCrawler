@@ -3,6 +3,7 @@ from multiprocess.managers import BaseManager
 
 from SpiderNode.HtmlDownloader import HtmlDownloader
 from SpiderNode.HtmlParser import HtmlParser
+# from ControlNode.DataOutput import DataOutput
 
 
 class SpiderWork(object):
@@ -43,11 +44,13 @@ class SpiderWork(object):
                 else:
                     print('Task queue is empty.')
             except EOFError as e:
+                print(e)
                 print("连接工作节点失败")
                 return
             except Exception as e:
                 print(e)
-                print("Crawl fail")
+                print("Crawl fail.")
+        print("Crawl finish.")
 
 
 if __name__ == "__main__":

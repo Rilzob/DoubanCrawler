@@ -35,7 +35,7 @@ class NodeManager(object):
                 url_q.put(new_url)
                 print('old_url=', url_manager.old_url_size())
                 # 加一个判断条件，当爬取2000个链接后就关闭，并保存进度
-                if(url_manager.old_url_size() > 100):
+                if(url_manager.old_url_size() > 15):
                     # 通知爬虫结点工作结束
                     url_q.put('end')
                     print('控制节点发起结束通知！')
@@ -48,7 +48,9 @@ class NodeManager(object):
                 urls = conn_q.get()
                 url_manager.add_new_urls(urls)
             except BaseException as e:
-                time.sleep(0.1)  # 延时休息
+                print(e)
+                time.sleep(0.5)  # 延时休息
+                # 最初延时休息0.1s开始时会出现任务队列为空的状况，猜测原因是解析出来的url还没有传入任务队列中所以加长了延时休息时间
 
     def result_solve_proc(self, result_q, conn_q, store_q):
         while(True):
@@ -64,23 +66,28 @@ class NodeManager(object):
                     conn_q.put(content['new_urls'])  # url为set类型
                     store_q.put(content['data'])  # 解析出来的数据为dict类型
                 else:
-                    time.sleep(0.1)  # 延时休息
+                    time.sleep(0.5)  # 延时休息
             except BaseException as e:
-                time.sleep(0.1)  # 延时休息
+                time.sleep(0.5)  # 延时休息
 
 
     def store_proc(self, store_q):
         output = DataOutput()
+        output.output_head(output.filepath)
         while True:
             if not store_q.empty():
                 data = store_q.get()
                 if data == 'end':
                     print("存储进程然后结束！")
                     output.output_end(output.filepath)
+                    output.output_dbend()
                     return
                 output.store_data(data)
+                new_data = tuple(data.values())
+                # 数据的存储需要以元组的形式，所以将数据从原来的dict转换为tuple
+                output.store_data_todb(new_data)
             else:
-                time.sleep(0.1)
+                time.sleep(0.5)
         pass
 
 if __name__ == '__main__':

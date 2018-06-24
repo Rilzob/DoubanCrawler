@@ -45,7 +45,9 @@ class HtmlParser(object):
         title = soup.find('div', id='wrapper').find('h1').find('span')
         data['title'] = title.get_text()
         summary = soup.find('div', class_='intro').find_all('p')
-        data['summary'] = []
+        liststr = []
         for i in range(len(summary)):
-            data['summary'].append(summary[i].get_text())
+            liststr.append(summary[i].get_text())
+        data['summary'] = ''.join(liststr)
+        # 更改了数据格式，便于存入数据库
         return data
