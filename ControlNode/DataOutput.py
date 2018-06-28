@@ -31,7 +31,7 @@ class DataOutput(object):
         if data is None:
             return
         self.datasHTML.append(data)
-        if len(self.datasHTML) > 10:
+        if len(self.datasHTML) < 20:
             self.output_html(self.filepath)
 
     def store_data_todb(self, data):

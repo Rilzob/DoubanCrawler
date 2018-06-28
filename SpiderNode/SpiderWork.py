@@ -3,7 +3,8 @@ from multiprocess.managers import BaseManager
 
 from SpiderNode.HtmlDownloader import HtmlDownloader
 from SpiderNode.HtmlParser import HtmlParser
-# from ControlNode.DataOutput import DataOutput
+import config
+import time
 
 
 class SpiderWork(object):
@@ -28,6 +29,14 @@ class SpiderWork(object):
         print("初始化成功")
 
     def crawl(self):
+        labels, url_list = self.parser.main_parser(config.page, config.main_url)
+        print("爬虫结点正在解析主URL：%s" % config.main_url)
+        for i in range(len(url_list)):
+            url_list_content = self.downloader.download(url_list[i])
+            new_urls = self.parser.parser(url_list[i], url_list_content, 0)
+            print(new_urls)
+            self.result.put({"new_urls": new_urls})
+            time.sleep(0.5)
         while(True):
             try:
                 if not self.task.empty():
@@ -36,11 +45,13 @@ class SpiderWork(object):
                         print("控制节点通知爬虫节点停止工作...")
                         # 接着通知其他节点停止工作
                         self.result.put({'new_urls': 'end', 'data': 'end'})
+                        print("Crawl finish.")
                         return
                     print("爬虫节点正在解析：%s" % url.encode('utf-8'))
                     content = self.downloader.download(url)
-                    new_urls, data = self.parser.parser(url, content)
-                    self.result.put({"new_urls": new_urls, "data": data})
+                    data = self.parser.parser(url, content, 1)
+                    self.result.put({"data": data})
+                    time.sleep(2)
                 else:
                     print('Task queue is empty.')
             except EOFError as e:
@@ -50,7 +61,6 @@ class SpiderWork(object):
             except Exception as e:
                 print(e)
                 print("Crawl fail.")
-        print("Crawl finish.")
 
 
 if __name__ == "__main__":
