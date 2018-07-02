@@ -52,15 +52,15 @@ class SpiderIPProxy(object):
         :param ip:
         :return:
         """
-        proxy_http_ip = 'http://' + ip
-        proxy_https_ip = 'https://' + ip
-        proxies = {'http': proxy_http_ip, 'https': proxy_https_ip}
+        proxy_http_ip = "http://"+ ip
+        proxy_https_ip ="https://" +ip
+        proxies = {'http': proxy_http_ip, 'https': proxy_https_ip, }
         return proxies
 
     def ip_test(self, ip_list):
         for ip_for_test in ip_list:
-            proxy_http_ip_test = 'http://' + ip_for_test
-            proxy_https_ip_test = 'https://' + ip_for_test
+            proxy_http_ip_test = "http://" + ip_for_test
+            proxy_https_ip_test = "https://" + ip_for_test
             proxies = {'http': proxy_http_ip_test, 'https': proxy_https_ip_test}
             # 构建格式化的单个proxies
             try:

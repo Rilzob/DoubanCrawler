@@ -1,0 +1,16 @@
+apparmor==2.12
+appdirs==1.4.3
+cmdln==2.0.0
+cupshelpers==1.0
+decorator==4.2.1
+isc==2.0
+LibAppArmor==2.12
+packaging==16.8
+ply==3.10
+pycups==1.9.73
+pycurl==7.43.0.1
+pygobject==3.26.1
+pyparsing==2.2.0
+six==1.11.0
+slip==0.6.5
+slip.dbus==0.6.5

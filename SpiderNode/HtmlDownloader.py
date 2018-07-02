@@ -11,9 +11,9 @@ class HtmlDownloader(object):
     def download(self, url):
         if url is None:
             return None
-        ip = self.IPProxy.get_random_ip()
+        proxies = self.IPProxy.get_proxy('192.116.142.153:8080')
         # print(proxies)
-        proxies = self.IPProxy.get_proxy(ip)
+        #r = requests.get(url, headers=config.headers)
         r = requests.get(url, headers=config.headers, proxies=proxies)
         if r.status_code == 200:
             r.encoding = 'utf-8'

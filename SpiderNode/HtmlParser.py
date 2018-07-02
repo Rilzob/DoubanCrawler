@@ -12,6 +12,7 @@ class HtmlParser(object):
         :return:返回的是标签以及完整的url集合
         """
         content = HtmlDownloader().download(url)
+        # print(content)
         soup = BeautifulSoup(content, 'html.parser')
         labels = []
         new_urls = []

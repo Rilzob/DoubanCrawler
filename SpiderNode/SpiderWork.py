@@ -30,6 +30,7 @@ class SpiderWork(object):
 
     def crawl(self):
         labels, url_list = self.parser.main_parser(config.page, config.main_url)
+        print(url_list)
         print("爬虫结点正在解析主URL：%s" % config.main_url)
         for i in range(len(url_list)):
             url_list_content = self.downloader.download(url_list[i])
