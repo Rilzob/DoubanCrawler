@@ -36,7 +36,7 @@ class NodeManager(object):
                 url_q.put(new_url)
                 print('old_url=', url_manager.old_url_size())
                 # 加一个判断条件，当爬取2000个链接后就关闭，并保存进度
-                if(url_manager.old_url_size() > 200):  # 这个200只是粗略的给定，实际的url个数远超200
+                if(url_manager.old_url_size() == 2024):  # 这个200只是粗略的给定，实际的url个数远超200
                     # 通知爬虫结点工作结束
                     url_q.put('end')
                     print('控制节点发起结束通知！')

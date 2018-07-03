@@ -22,7 +22,7 @@ HTTPCACHE_ENABLED = False
 GFW_PROXY = 'http://127.0.0.1:8123'
 
 # splash settings.If you use docker-compose,SPLASH_URL = 'http://splash:8050'
-SPLASH_URL = 'http://138.68.46.196:8050'
+SPLASH_URL = 'http://127.0.0.1:8050'
 
 # extension settings
 RETRY_ENABLED = False
@@ -51,9 +51,9 @@ LOG_FILE = 'logs/haipproxy.log'
 # Custom settings of this project
 #####################################################################
 # redis settings.If you use docker-compose, REDIS_HOST = 'redis'
-REDIS_HOST = '138.68.46.196'
+REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
-REDIS_PASSWORD = 'DoubanCrawler'
+REDIS_PASSWORD = 'Watermirrorsir'
 DEFAULT_REDIS_DB = 0
 META_DATA_DB = 0
 
@@ -74,7 +74,7 @@ DATA_ALL = 'haipproxy:all'
 # ttl_queue, speed_qeuue -> clients
 # http_queue is a list, it's used to store initially http/https proxy resourecs
 INIT_HTTP_QUEUE = 'haipproxy:init:http'
-# socks proxy resources container
+# socks proxy resources containe
 INIT_SOCKS4_QUEUE = 'haipproxy:init:socks4'
 INIT_SOCKS5_QUEUE = 'haipproxy:init:socks5'
 
@@ -86,12 +86,14 @@ TEMP_HTTP_QUEUE = 'haipproxy:http:temp'
 TEMP_HTTPS_QUEUE = 'haipproxy:https:temp'
 TEMP_WEIBO_QUEUE = 'haipproxy:weibo:temp'
 TEMP_ZHIHU_QUEUE = 'haipproxy:zhihu:temp'
+TEMP_DOUBAN_QUEUE = 'haipproxy:douban:temp'  # 新增的douban队列
 
 # valited queues are zsets.squid and other clients fetch ip resources from them.
 VALIDATED_HTTP_QUEUE = 'haipproxy:validated:http'
 VALIDATED_HTTPS_QUEUE = 'haipproxy:validated:https'
 VALIDATED_WEIBO_QUEUE = 'haipproxy:validated:weibo'
 VALIDATED_ZHIHU_QUEUE = 'haipproxy:validated:zhihu'
+VALIDATED_DOUBAN_QUEUE = 'haipproxy:validated:douban'
 
 # time to life of proxy ip resources
 TTL_VALIDATED_RESOURCE = 2  # minutes
@@ -99,12 +101,14 @@ TTL_HTTP_QUEUE = 'haipproxy:ttl:http'
 TTL_HTTPS_QUEUE = 'haipproxy:ttl:https'
 TTL_WEIBO_QUEUE = 'haipproxy:ttl:weibo'
 TTL_ZHIHU_QUEUE = 'haipproxy:ttl:zhihu'
+TTL_DOUBAN_QUEUE = 'haipproxy:ttl:douban'
 
 # queue for proxy speed
 SPEED_HTTP_QUEUE = 'haipproxy:speed:http'
 SPEED_HTTPS_QUEUE = 'haipproxy:speed:https'
 SPEED_WEIBO_QUEUE = 'haipproxy:speed:weibo'
 SPEED_ZHIHU_QUEUE = 'haipproxy:speed:zhihu'
+SPEED_DOUBAN_QUEUE = 'haipproxy:speed:douban'
 
 # squid settings on linux os
 # execute sudo chown -R $USER /etc/squid/ and

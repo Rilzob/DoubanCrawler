@@ -13,7 +13,9 @@ from config.settings import (
     VALIDATED_WEIBO_QUEUE, TTL_WEIBO_QUEUE,
     SPEED_WEIBO_QUEUE, TEMP_ZHIHU_QUEUE,
     VALIDATED_ZHIHU_QUEUE, TTL_ZHIHU_QUEUE,
-    SPEED_ZHIHU_QUEUE)
+    SPEED_ZHIHU_QUEUE, TEMP_DOUBAN_QUEUE,
+    VALIDATED_DOUBAN_QUEUE, TTL_DOUBAN_QUEUE,
+    SPEED_DOUBAN_QUEUE)
 
 
 __all__ = ['CRWALER_TASKS', 'VALIDATOR_TASKS', 'CRAWLER_TASK_MAPS',
@@ -369,6 +371,13 @@ VALIDATOR_TASKS = [
         'internal': 20,
         'enable': 1,
     },
+    {
+        'name': 'douban',
+        'task_queue': TEMP_DOUBAN_QUEUE,
+        'resource': VALIDATED_DOUBAN_QUEUE,
+        'internal': 20,
+        'enable': 1,
+    },
 ]
 
 # crawlers will fetch tasks from the following queues
@@ -385,7 +394,8 @@ TEMP_TASK_MAPS = {
     'http': TEMP_HTTP_QUEUE,
     'https': TEMP_HTTPS_QUEUE,
     'weibo': TEMP_WEIBO_QUEUE,
-    'zhihu': TEMP_ZHIHU_QUEUE
+    'zhihu': TEMP_ZHIHU_QUEUE,
+    'douban': TEMP_DOUBAN_QUEUE
 }
 
 
@@ -395,7 +405,8 @@ SCORE_MAPS = {
     'http': VALIDATED_HTTP_QUEUE,
     'https': VALIDATED_HTTPS_QUEUE,
     'weibo': VALIDATED_WEIBO_QUEUE,
-    'zhihu': VALIDATED_ZHIHU_QUEUE
+    'zhihu': VALIDATED_ZHIHU_QUEUE,
+    'douban': VALIDATED_DOUBAN_QUEUE
 }
 
 # validator scheduler and clients will fetch proxies from the following queues which are verified recently
@@ -403,13 +414,15 @@ TTL_MAPS = {
     'http': TTL_HTTP_QUEUE,
     'https': TTL_HTTPS_QUEUE,
     'weibo': TTL_WEIBO_QUEUE,
-    'zhihu': TTL_ZHIHU_QUEUE
+    'zhihu': TTL_ZHIHU_QUEUE,
+    'douban': TTL_DOUBAN_QUEUE
 }
 
 SPEED_MAPS = {
     'http': SPEED_HTTP_QUEUE,
     'https': SPEED_HTTPS_QUEUE,
     'weibo': SPEED_WEIBO_QUEUE,
-    'zhihu': SPEED_ZHIHU_QUEUE
+    'zhihu': SPEED_ZHIHU_QUEUE,
+    'douban': SPEED_DOUBAN_QUEUE
 }
 
