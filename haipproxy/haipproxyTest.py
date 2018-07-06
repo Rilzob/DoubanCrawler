@@ -18,7 +18,7 @@ def get_proxies(proxy):
     :param proxy:从redis数据库中得到的http://46.10.157.81:53281形式的ip
     :return:可作requests.get参数的proxies
     """
-    ip = proxy.strip('http://')
+    ip = proxy.strip('https://')
     proxy_http_ip = "http://" + ip
     proxy_https_ip = "https://" + ip
     proxies = {'http': proxy_http_ip, 'https': proxy_https_ip, }

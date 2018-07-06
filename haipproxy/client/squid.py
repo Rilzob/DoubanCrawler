@@ -5,13 +5,13 @@ Squid Client for spiders.
 import time
 import subprocess
 
-from logger import client_logger
-from config.rules import (
+from haipproxy.logger import client_logger
+from haipproxy.config.rules import (
     SCORE_MAPS, TTL_MAPS,
     SPEED_MAPS)
-from utils import (
+from haipproxy.utils import (
     get_redis_conn, decode_all)
-from config.settings import (
+from haipproxy.config.settings import (
     SQUID_BIN_PATH, SQUID_CONF_PATH,
     SQUID_TEMPLATE_PATH, TTL_VALIDATED_RESOURCE,
     LONGEST_RESPONSE_TIME, LOWEST_SCORE)

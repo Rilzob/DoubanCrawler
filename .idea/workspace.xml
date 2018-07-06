@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="545b3f5b-5a77-4857-a228-77b56fee8751" name="Default" comment="" />
+    <list default="true" id="545b3f5b-5a77-4857-a228-77b56fee8751" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControlNode/Douban.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControlNode/Douban_2018_07_03_14_21_29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControlNode/new_urls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControlNode/old_urls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/client/py_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/client/py_cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/client/squid.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/client/squid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/config/rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/config/rules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/haipproxyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/haipproxyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haipproxy/utils/redis_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/haipproxy/utils/redis_util.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +31,8 @@
       <file leaf-file-name="NodeManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="26" />
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
               <folding>
                 <element signature="e#17#62#0" expanded="true" />
               </folding>
@@ -29,8 +43,8 @@
       <file leaf-file-name="SpiderWork.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="61">
+              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
               <folding>
                 <element signature="e#17#62#0" expanded="true" />
               </folding>
@@ -38,22 +52,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="haipproxyTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="haipproxyTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haipproxy/haipproxyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlDownloaderTest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataOutput.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlDownloaderTest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="824">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#17#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,28 +106,10 @@
       <file leaf-file-name="HtmlDownloader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="15" selection-start-line="3" selection-end-line="3" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="py_cli.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haipproxy/client/py_cli.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HtmlParser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="798">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
-                <element signature="e#17#26#0" expanded="true" />
+                <element signature="e#17#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +120,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -125,6 +151,8 @@
       <find>host</find>
       <find>get_prox</find>
       <find>http://</find>
+      <find />
+      <find>.html</find>
     </findStrings>
     <replaceStrings>
       <replace>datasHTML</replace>
@@ -132,7 +160,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -147,20 +175,24 @@
         <option value="$PROJECT_DIR$/SpiderNode/SpiderWork.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/SpiderNode/HtmlParser.py" />
-        <option value="$PROJECT_DIR$/haipproxy/client/squid.py" />
         <option value="$PROJECT_DIR$/haipproxy/config/settings.py" />
         <option value="$PROJECT_DIR$/SpiderIPProxyTest.py" />
         <option value="$PROJECT_DIR$/ControlNode/NodeManager.py" />
         <option value="$PROJECT_DIR$/Test.ipynb" />
-        <option value="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" />
-        <option value="$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" />
+        <option value="$PROJECT_DIR$/haipproxy/client/squid.py" />
+        <option value="$PROJECT_DIR$/haipproxy/config/rules.py" />
+        <option value="$PROJECT_DIR$/haipproxy/utils/redis_util.py" />
         <option value="$PROJECT_DIR$/haipproxy/haipproxyTest.py" />
+        <option value="$PROJECT_DIR$/haipproxy/client/py_cli.py" />
+        <option value="$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" />
+        <option value="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
-    <option name="y" value="45" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="308" />
+    <option name="y" value="186" />
     <option name="width" value="1266" />
     <option name="height" value="719" />
   </component>
@@ -177,6 +209,16 @@
             <path>
               <item name="DoubanBookCrawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoubanBookCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DoubanBookCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DoubanBookCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="ControlNode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DoubanBookCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DoubanBookCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="SpiderNode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,7 +250,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.haipproxyTest">
+  <component name="RunManager" selected="Python.SpiderWork">
+    <configuration name="HtmlDownloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DoubanBookCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpiderNode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="HtmlDownloaderTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DoubanBookCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,24 +305,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="SpiderIPProxyTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DoubanBookCrawler" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XiciIPProxyPool/SpiderIPProxyTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="SpiderWork" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DoubanBookCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,7 +323,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="haipproxyTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DoubanBookCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,11 +331,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/haipproxy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/haipproxy/haipproxyTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,17 +363,17 @@
     <list>
       <item itemvalue="Python.NodeManager" />
       <item itemvalue="Python.SpiderWork" />
-      <item itemvalue="Python.SpiderIPProxyTest" />
-      <item itemvalue="Python.haipproxyTest" />
       <item itemvalue="Python.HtmlDownloaderTest" />
+      <item itemvalue="Python.HtmlDownloader" />
+      <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.haipproxyTest" />
-        <item itemvalue="Python.HtmlDownloaderTest" />
         <item itemvalue="Python.SpiderWork" />
         <item itemvalue="Python.NodeManager" />
-        <item itemvalue="Python.SpiderIPProxyTest" />
+        <item itemvalue="Python.HtmlDownloaderTest" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.HtmlDownloader" />
       </list>
     </recent_temporary>
   </component>
@@ -358,30 +400,54 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
+    <frame x="308" y="186" width="1266" height="719" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15060559" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.35489085" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32993197" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.1721959" side_tool="true" weight="0.25245902" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.2803838" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.8278041" visible="true" weight="0.25245902" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32993197" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.33636364" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8278041" visible="true" weight="0.6023891" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.7435492" weight="0.66994536" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39872068" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39872068" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.2803838" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2311743" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.8278041" visible="true" weight="0.38646287" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39872068" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.7435492" weight="0.66994536" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.1721959" side_tool="true" weight="0.25245902" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" weight="0.32993197" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.2803838" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.33636364" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,64 +458,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_06_21_16_18_20.html" />
-    <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#17#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/UrlManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#17#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -461,9 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -504,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_06_28_22_05_41.html" />
     <entry file="file://$PROJECT_DIR$/ControlNode/UrlManager.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -519,13 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/multiprocess/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/multiprocess/managers.py" />
     <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -547,23 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haipproxy/client/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -571,30 +546,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haipproxy/client/squid.py">
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/.directory" />
+    <entry file="file://$PROJECT_DIR$/haipproxy/config/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="1197">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/Test.ipynb" />
+    <entry file="file://$PROJECT_DIR$/XiciIPProxyPool/SpiderIPProxyTest.py" />
+    <entry file="file://$PROJECT_DIR$/XiciIPProxyPool/SpiderIPProxy.py" />
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_07_03_14_21_29.html" />
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/requests/adapters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="1247">
+          <caret line="501" selection-start-line="501" selection-end-line="501" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haipproxy/utils/redis_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haipproxy/client/squid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haipproxy/config/rules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haipproxy/client/py_cli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="109" column="10" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#74#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.directory">
+    <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_07_04_19_06_19.html" />
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/bs4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#17#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_07_04_19_42_37.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="26" />
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
           <folding>
             <element signature="e#17#62#0" expanded="true" />
           </folding>
@@ -603,76 +644,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="61">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding>
             <element signature="e#17#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haipproxy/config/settings.py">
+    <entry file="file://$PROJECT_DIR$/haipproxy/haipproxyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haipproxy/client/py_cli.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XiciIPProxyPool/SpiderIPProxyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XiciIPProxyPool/SpiderIPProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="15" selection-start-line="3" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="798">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haipproxy/haipproxyTest.py">
+    <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="-853">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

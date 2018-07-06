@@ -4,12 +4,12 @@ This module privodes core algrithm to pick up proxy ip resources.
 import time
 
 # from logger import client_logger
-from utils import (
+from haipproxy.utils import (
     get_redis_conn, decode_all)
-from config.rules import (
+from haipproxy.config.rules import (
     SCORE_MAPS, TTL_MAPS,
     SPEED_MAPS)
-from config.settings import (
+from haipproxy.config.settings import (
     TTL_VALIDATED_RESOURCE, LONGEST_RESPONSE_TIME,
     LOWEST_SCORE, DATA_ALL)
 
@@ -107,7 +107,7 @@ class ProxyFetcher:
             proxies = ttl_proxies or scored_proxies
         proxies = decode_all(proxies)
         # client_logger.info('{} proxies have been fetched'.format(len(proxies)))
-        print('{} proxies have been fetched'.format(len(proxies)))
+        # print('{} proxies have been fetched'.format(len(proxies)))
         self.pool.extend(proxies)
         return self.pool
 
