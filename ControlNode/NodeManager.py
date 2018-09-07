@@ -2,7 +2,6 @@
 from multiprocess.managers import BaseManager
 import time
 from multiprocessing import Process, Queue
-import config
 
 from ControlNode.DataOutput import DataOutput
 from ControlNode.UrlManager import UrlManager
@@ -25,18 +24,18 @@ class NodeManager(object):
         # 返回manager对象
         return manager
 
-    def url_manager_proc(self, url_q, conn_q):
+    def url_manager_proc(self, url_q, conn_q, root_url):
         url_manager = UrlManager()
+        url_manager.add_new_url(root_url)
         while True:
             while(url_manager.has_new_url()):
                 # 从url管理器中获取新的url
                 new_url = url_manager.get_new_url()
-                print(new_url)
                 # 将新的url发给工作节点
                 url_q.put(new_url)
                 print('old_url=', url_manager.old_url_size())
                 # 加一个判断条件，当爬取2000个链接后就关闭，并保存进度
-                if(url_manager.old_url_size() == 2024):  # 这个200只是粗略的给定，实际的url个数远超200
+                if(url_manager.old_url_size() > 5):
                     # 通知爬虫结点工作结束
                     url_q.put('end')
                     print('控制节点发起结束通知！')
@@ -50,9 +49,8 @@ class NodeManager(object):
                 url_manager.add_new_urls(urls)
             except BaseException as e:
                 print(e)
-                time.sleep(0.1)  # 延时休息
+                time.sleep(0.5)  # 延时休息
                 # 最初延时休息0.1s开始时会出现任务队列为空的状况，猜测原因是解析出来的url还没有传入任务队列中所以加长了延时休息时间
-                # 事实证明并不是这个问题，这个问题还没有解决
 
     def result_solve_proc(self, result_q, conn_q, store_q):
         while(True):
@@ -82,15 +80,10 @@ class NodeManager(object):
                 if data == 'end':
                     print("存储进程然后结束！")
                     output.output_end(output.filepath)
-                    output.output_dbend()
                     return
                 output.store_data(data)
-                new_data = tuple(data.values())
-                # 数据的存储需要以元组的形式，所以将数据从原来的dict转换为tuple
-                output.store_data_todb(new_data)
             else:
                 time.sleep(0.5)
-        pass
 
 if __name__ == '__main__':
     # 初始化4个队列
@@ -102,7 +95,7 @@ if __name__ == '__main__':
     node = NodeManager()
     manager = node.start_Manager(url_q, result_q)
     # 创建url管理进程，数据提取进程和数据存储进程
-    url_manager_proc = Process(target=node.url_manager_proc, args=(url_q, conn_q,))
+    url_manager_proc = Process(target=node.url_manager_proc, args=(url_q, conn_q, 'https://book.douban.com/subject/30170099/',))
     result_solve_proc = Process(target=node.result_solve_proc, args=(result_q, conn_q, store_q,))
     store_proc = Process(target=node.store_proc, args=(store_q,))
     # 启动三个进程和分布式管理器

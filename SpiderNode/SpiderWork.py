@@ -30,14 +30,15 @@ class SpiderWork(object):
 
     def crawl(self):
         labels, url_list = self.parser.main_parser(config.page, config.main_url)
-        print(url_list)
+        print(url_list)  # url_list里存储的是每个标签的网页地址 eg:https://book.douban.com/tag/小说?start=0%type=T
         print("爬虫结点正在解析主URL：%s" % config.main_url)
-        for i in range(len(url_list)):
+        for i in range(3):  # 3代表标签数目，修改为5减少测试时间
+        # for i in range(len(url_list)):
             url_list_content = self.downloader.download(url_list[i])
             new_urls = self.parser.parser(url_list[i], url_list_content, 0)
             print(new_urls)
             self.result.put({"new_urls": new_urls})
-            time.sleep(0.5)
+            time.sleep(2)
         while(True):
             try:
                 if not self.task.empty():
@@ -51,7 +52,8 @@ class SpiderWork(object):
                     print("爬虫节点正在解析：%s" % url.encode('utf-8'))
                     content = self.downloader.download(url)
                     data = self.parser.parser(url, content, 1)
-                    self.result.put({"data": data})
+                    new_urls = self.parser.parser(url, content, 0)
+                    self.result.put({"new_urls": new_urls, "data": data})
                     time.sleep(2)
                 else:
                     print('Task queue is empty.')
