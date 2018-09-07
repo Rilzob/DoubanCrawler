@@ -80,8 +80,12 @@ class NodeManager(object):
                 if data == 'end':
                     print("存储进程然后结束！")
                     output.output_end(output.filepath)
+                    output.output_dbend()
                     return
                 output.store_data(data)
+                new_data = tuple(data.values())
+                # 数据的存储需要以元组的形式，所以将数据从原来的dict转换为tuple
+                output.store_data_todb(new_data)
             else:
                 time.sleep(0.5)
 
