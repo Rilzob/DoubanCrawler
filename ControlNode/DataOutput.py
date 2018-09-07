@@ -23,6 +23,8 @@ class DataOutput(object):
         id integer primary key,
         url varchar(40) NOT NULL,
         title varchar(20) NOT NULL,
+        author varchar(20) NOT NULL,
+        score integer NOT NULL,
         summary varchar(100) NOT NULL
         """
         self.cx.execute('CREATE TABLE IF NOT EXISTS %s(%s)' % (table_name, values))
@@ -46,7 +48,7 @@ class DataOutput(object):
         :return:
         '''
         for data in self.datasDB:
-            self.cx.execute("INSERT INTO %s (url, title, summary) VALUES (?,?,?)" % table_name, data)
+            self.cx.execute("INSERT INTO %s (url, title, author, score, summary) VALUES (?,?,?,?,?)" % table_name, data)
             self.datasDB.remove(data)
         self.cx.commit()
 
@@ -73,6 +75,8 @@ class DataOutput(object):
             fout.write("<tr>")
             fout.write("<td>%s</td>" % data['url'])
             fout.write("<td>%s</td>" % data['title'])
+            fout.write("<td>%s</td>" % data['author'])
+            fout.write("<td>%s</td>" % data['score'])
             fout.write("<td>")
             fout.write("%s" % data['summary'])
             fout.write("</td>")
