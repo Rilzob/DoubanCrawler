@@ -5,13 +5,13 @@ import sqlite3
 
 
 class DataOutput(object):
-    def __init__(self):
-        self.filepath = 'Douban_%s.html' % (time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()))
+    def __init__(self, label):
+        self.filepath = 'Douban_%s&%s.html' % (time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()), label)
         # self.output_head(self.filepath) 将这条语句的位置改为在函数store_proc中，否则会在SpiderNode文件夹中产生多余的HTML文件
         self.datasHTML = []  # 用来存取HTML数据
         self.datasDB = []  # 用来存取数据库数据
         self.cx = sqlite3.connect('Douban.db')
-        self.create_table('Douban')
+        self.create_table(label)
 
     def create_table(self, table_name):
         '''

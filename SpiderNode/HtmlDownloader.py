@@ -1,7 +1,6 @@
 # encoding:utf-8
 import requests
 import config
-import time
 
 class HtmlDownloader(object):
     def download(self, url):

@@ -22,8 +22,8 @@ class UrlManager(object):
         """
         new_url = self.new_urls.pop()
         m = hashlib.md5()
-        m.update(new_url.encode("utf-8"))
-        self.old_urls.add(m.hexdigest()[8:-8])
+        m.update(new_url.encode("utf-8"))  # 对new_url进行加密
+        self.old_urls.add(m.hexdigest()[8:-8])  # 得到加密字符串并取中间的16位加入old_urls中
         return new_url
 
     def add_new_url(self, url):

@@ -15,7 +15,7 @@ class SpiderWork(object):
         BaseManager.register('get_result_queue')
         # 实现第二步：连接到服务器
         server_addr = '127.0.0.1'
-        print("Connect to server %s..." % server_addr)
+        print("连接到服务器 %s..." % server_addr)
         # 端口和验证口令注意保持与服务器进程设置的完全一致
         self.m = BaseManager(address=(server_addr, 8002), authkey='douban'.encode('utf-8'))
         # 从网络连接
@@ -35,35 +35,42 @@ class SpiderWork(object):
         for i in range(3):  # 3代表标签数目，修改为5减少测试时间
         # for i in range(len(url_list)):
             url_list_content = self.downloader.download(url_list[i])
-            new_urls = self.parser.parser(url_list[i], url_list_content, 0)
+            new_urls = list(self.parser.parser(url_list[i], url_list_content, 0))  # 返回值为set数据类型，为方便后续操作转换为list
             print(new_urls)
-            self.result.put({"new_urls": new_urls})
+            self.result.put({"label": labels[i], "new_urls": new_urls})
             time.sleep(2)
-        while(True):
-            try:
-                if not self.task.empty():
-                    url = self.task.get()
-                    if url == 'end':
-                        print("控制节点通知爬虫节点停止工作...")
-                        # 接着通知其他节点停止工作
-                        self.result.put({'new_urls': 'end', 'data': 'end'})
-                        print("Crawl finish.")
+            while(True):
+                try:
+                    if not self.task.empty():
+                        url = self.task.get()  # get到的数据同样为set类型需要进行类型转换
+                        if url == 'over':  # over代表该标签下的所有url已全部解析，与end区分一下
+                            print('%s标签下所有URL已全部解析' % labels[i])
+                            self.result.put({'data': 'over'})
+                            break
+                        print("爬虫节点正在解析：%s" % url.encode('utf-8'))
+                        content = self.downloader.download(url)
+                        data = self.parser.parser(url, content, 1)
+                        self.result.put({"data": data})
+                        time.sleep(2)
+                    else:
+                        print('任务队列为空！')
                         return
-                    print("爬虫节点正在解析：%s" % url.encode('utf-8'))
-                    content = self.downloader.download(url)
-                    data = self.parser.parser(url, content, 1)
-                    new_urls = self.parser.parser(url, content, 0)
-                    self.result.put({"new_urls": new_urls, "data": data})
-                    time.sleep(2)
-                else:
-                    print('Task queue is empty.')
-            except EOFError as e:
-                print(e)
-                print("连接工作节点失败")
-                return
-            except Exception as e:
-                print(e)
-                print("Crawl fail.")
+                except EOFError as e:
+                    print(e)
+                    print("连接工作节点失败！")
+                    return
+                except Exception as e:
+                    print(e)
+                    print("爬取失败！")
+        url = self.task.get()
+        if url == 'end':
+            print("控制节点通知其他节点停止工作...")
+            self.result.put({'new_urls': 'end', 'data': 'end'})
+            print("爬取完成")
+            return
+        else:
+            print(url)
+            print("爬取失败")
 
 
 if __name__ == "__main__":

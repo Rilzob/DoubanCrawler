@@ -66,12 +66,16 @@ class HtmlParser(object):
         抽取有效数据
         :param page_url: 下载页面的url
         :param soup: soup
-        :return: 返回有效数据
+        :return:
         """
         data = {}
         data['url'] = page_url
         title = soup.find('div', id='wrapper').find('h1').find('span')
         data['title'] = title.get_text()
+        author = soup.find('div', id='info').find('a', class_="")
+        data['author'] = author.get_text()
+        score = soup.find('div', id='interest_sectl').find('strong')
+        data['score'] = score.get_text()
         summary = soup.find('div', class_='intro').find_all('p')
         liststr = []
         for i in range(len(summary)):
