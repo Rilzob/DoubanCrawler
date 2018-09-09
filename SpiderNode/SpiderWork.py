@@ -32,25 +32,31 @@ class SpiderWork(object):
         labels, url_list = self.parser.main_parser(config.page, config.main_url)
         print(url_list)  # url_list里存储的是每个标签的网页地址 eg:https://book.douban.com/tag/小说?start=0%type=T
         print("爬虫结点正在解析主URL：%s" % config.main_url)
-        for i in range(3):  # 3代表标签数目，修改为5减少测试时间
+        for i in range(config.labels_number):  # 3代表标签数目，修改为5减少测试时间
         # for i in range(len(url_list)):
             url_list_content = self.downloader.download(url_list[i])
-            new_urls = list(self.parser.parser(url_list[i], url_list_content, 0))  # 返回值为set数据类型，为方便后续操作转换为list
+            new_urls = self.parser.parser(url_list[i], url_list_content, 0)  # 返回值改为set类型
             print(new_urls)
             self.result.put({"label": labels[i], "new_urls": new_urls})
             time.sleep(2)
+            dataset = list()
             while(True):
                 try:
                     if not self.task.empty():
                         url = self.task.get()  # get到的数据同样为set类型需要进行类型转换
                         if url == 'over':  # over代表该标签下的所有url已全部解析，与end区分一下
                             print('%s标签下所有URL已全部解析' % labels[i])
-                            self.result.put({'data': 'over'})
+                            self.result.put({'new_urls': 'over'})
+                            print(dataset)
+                            self.result.put({'data': dataset})
+                            time.sleep(1)
                             break
                         print("爬虫节点正在解析：%s" % url.encode('utf-8'))
                         content = self.downloader.download(url)
                         data = self.parser.parser(url, content, 1)
-                        self.result.put({"data": data})
+                        # print(data)
+                        dataset.append(data)
+                        # print(len(dataset))
                         time.sleep(2)
                     else:
                         print('任务队列为空！')

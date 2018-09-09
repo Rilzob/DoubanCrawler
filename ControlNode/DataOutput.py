@@ -35,11 +35,11 @@ class DataOutput(object):
         self.datasHTML.append(data)
         self.output_html(self.filepath)
 
-    def store_data_todb(self, data):
+    def store_data_todb(self, data, label):
         if data is None:
             return
         self.datasDB.append(data)
-        self.output_db('Douban')
+        self.output_db(label)
 
     def output_db(self, table_name):
         '''

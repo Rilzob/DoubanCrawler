@@ -23,7 +23,7 @@ class UrlManager(object):
         new_url = self.new_urls.pop()
         m = hashlib.md5()
         m.update(new_url.encode("utf-8"))  # 对new_url进行加密
-        self.old_urls.add(m.hexdigest()[8:-8])  # 得到加密字符串并取中间的16位加入old_urls中
+        self.old_urls.append(m.hexdigest()[8:-8])  # 得到加密字符串并取中间的16位加入old_urls中
         return new_url
 
     def add_new_url(self, url):
@@ -36,9 +36,8 @@ class UrlManager(object):
             return
         m = hashlib.md5()
         m.update(url.encode('utf-8'))
-        url_md5 = m.hexdigest()[8:-8]
-        if url not in self.new_urls and url_md5 not in self.old_urls:
-            self.new_urls.add(url)
+        if url not in self.new_urls:
+            self.new_urls.append(url)
 
     def add_new_urls(self, urls):
         """
@@ -88,4 +87,4 @@ class UrlManager(object):
                 return tmp
         except:
             print('[!] 无进度文件, 创建: %s' % path)
-        return set()
+        return list()

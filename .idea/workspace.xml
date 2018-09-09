@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/ControlNode/NodeManager.py" line="100" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="545b3f5b-5a77-4857-a228-77b56fee8751" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControlNode/DataOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/ControlNode/DataOutput.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControlNode/Douban.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControlNode/Douban_2018_09_07_15_50_43.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControlNode/Douban_2018_09_08_11_17_56&amp;xiaoshuo.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ControlNode/NodeManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/ControlNode/NodeManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControlNode/UrlManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/ControlNode/UrlManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControlNode/new_urls.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControlNode/old_urls.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpiderNode/HtmlParser.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderNode/HtmlParser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpiderNode/SpiderWork.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderNode/SpiderWork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="NodeManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+            <state relative-caret-position="394">
+              <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
               <folding>
                 <element signature="e#17#62#0" expanded="true" />
               </folding>
@@ -40,11 +38,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Douban_2018_09_09_12_12_06&amp;xiaoshuo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_12_12_06&amp;xiaoshuo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-307" />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HtmlParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+            <state relative-caret-position="-1259">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
                 <element signature="e#17#26#0" expanded="true" />
               </folding>
@@ -52,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpiderWork.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpiderWork.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+            <state relative-caret-position="-404">
+              <caret line="50" column="62" lean-forward="true" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="62" />
               <folding>
                 <element signature="e#17#62#0" expanded="true" />
               </folding>
@@ -67,8 +72,8 @@
       <file leaf-file-name="UrlManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ControlNode/UrlManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="-608">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -79,8 +84,8 @@
       <file leaf-file-name="DataOutput.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="483">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
               </folding>
@@ -91,8 +96,8 @@
       <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="147">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -100,8 +105,8 @@
       <file leaf-file-name="HtmlDownloader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="231">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
               </folding>
@@ -121,36 +126,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>slee</find>
-      <find>store_data</find>
-      <find>datasHTML</find>
-      <find>output_html</find>
-      <find>5</find>
-      <find>output</find>
-      <find>控制节点</find>
-      <find>store_q</find>
-      <find>result.p</find>
-      <find>控制节</find>
-      <find>option</find>
-      <find>parser</find>
-      <find>print(dat</find>
-      <find>outp</find>
-      <find>main_parser</find>
-      <find>store_</find>
-      <find>Data</find>
-      <find>DataOutput</find>
-      <find>store</find>
-      <find>store_proc</find>
-      <find>task</find>
       <find>labels_</find>
       <find>creat</find>
       <find>crea</find>
       <find>data</find>
       <find>dataou</find>
       <find>labels</find>
-      <find>end</find>
-      <find>set</find>
       <find>任务</find>
+      <find>list</find>
+      <find>set</find>
+      <find>old</find>
+      <find>old_</find>
+      <find>save</find>
+      <find>sa</find>
+      <find>load_pro</find>
+      <find>add</find>
+      <find>result</find>
+      <find>爬取失败</find>
+      <find>hash</find>
+      <find>get</find>
+      <find>get_new</find>
+      <find>个标签</find>
+      <find>len</find>
+      <find>3</find>
+      <find>over</find>
+      <find>new_urls</find>
+      <find>end</find>
+      <find>lazy_</find>
+      <find>print(data</find>
+      <find>dataset</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>datasHTML</replace>
@@ -182,17 +187,17 @@
         <option value="$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" />
         <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/ControlNode/Douban_2018_09_07_14_24_25.html" />
-        <option value="$PROJECT_DIR$/ControlNode/UrlManager.py" />
-        <option value="$PROJECT_DIR$/SpiderNode/HtmlParser.py" />
         <option value="$PROJECT_DIR$/SpiderNode/HtmlDownloader.py" />
+        <option value="$PROJECT_DIR$/SpiderNode/HtmlParser.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/ControlNode/NodeManager.py" />
-        <option value="$PROJECT_DIR$/ControlNode/DataOutput.py" />
+        <option value="$PROJECT_DIR$/ControlNode/UrlManager.py" />
         <option value="$PROJECT_DIR$/SpiderNode/SpiderWork.py" />
+        <option value="$PROJECT_DIR$/ControlNode/DataOutput.py" />
+        <option value="$PROJECT_DIR$/ControlNode/NodeManager.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="width" value="964" />
     <option name="height" value="1048" />
@@ -401,20 +406,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1928" height="1048" extended-state="7" />
+    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12216956" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.106371775" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32896176" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.07582939" side_tool="true" visible="true" weight="0.37704918" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.15429173" side_tool="true" visible="true" weight="0.43934426" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.2803838" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32896176" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.33551913" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.9241706" visible="true" weight="0.37704918" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.84570825" visible="true" weight="0.43934426" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.7435492" weight="0.3169399" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.74196947" weight="0.3169399" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.73570657" weight="0.37870473" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.7266983" weight="0.3781421" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -425,18 +430,18 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12216956" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32896176" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32896176" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8278041" weight="0.4295082" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.2803838" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3978142" />
       <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.7435492" visible="true" weight="0.3169399" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.1721959" side_tool="true" weight="0.25245902" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32896176" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.33551913" />
@@ -458,48 +463,19 @@
           <line>738</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ControlNode/DataOutput.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="36" />
+      <option name="time" value="55" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/haipproxy/HtmlDownloaderTest.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/client/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/client/py_cli.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/client/squid.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/logger/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/haipproxyTest.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/config/rules.py" />
-    <entry file="file://$PROJECT_DIR$/haipproxy/config/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_05_16_03_59.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_06_17_47_22.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_06_17_47_42.html" />
-    <entry file="file://$PROJECT_DIR$/SpiderNode/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_06_17_53_07.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_06_18_55_17.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_06_19_11_29.html" />
-    <entry file="file:///usr/lib/python3.6/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/site-packages/OpenSSL/SSL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="1714" selection-start-line="1714" selection-end-line="1714" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_07_08_23_03.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_07_08_42_01.html" />
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_07_08_42_17.html" />
     <entry file="file:///usr/lib/python3.6/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -546,13 +522,6 @@
     <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_07_15_50_43.html" />
     <entry file="file://$PROJECT_DIR$/ControlNode/new_urls.txt" />
     <entry file="file://$PROJECT_DIR$/ControlNode/old_urls.txt" />
-    <entry file="file:///usr/lib64/python3.6/site-packages/multiprocess/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -560,81 +529,166 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_11_15_55&amp;xiaoshuo.html" />
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_13_36_59&amp;xiaoshuo.html" />
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_13_55_13&amp;xiaoshuo.html" />
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_14_01_50&amp;xiaoshuo.html" />
+    <entry file="file:///usr/lib/python3.6/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="1291" selection-start-line="1291" selection-end-line="1291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib64/python3.6/site-packages/multiprocess/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_15_03_58&amp;xiaoshuo.html" />
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_15_23_57&amp;xiaoshuo.html" />
+    <entry file="file:///usr/lib64/python3.6/multiprocessing/popen_fork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib64/python3.6/multiprocessing/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_15_42_41&amp;xiaoshuo.html" />
     <entry file="file:///usr/lib64/python3.6/site-packages/multiprocess/connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="371" selection-start-line="371" selection-end-line="371" />
+        <state relative-caret-position="448">
+          <caret line="590" column="13" lean-forward="true" selection-start-line="590" selection-start-column="13" selection-end-line="590" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/site-packages/bs4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_08_15_00&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="88" lean-forward="true" selection-start-column="88" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="147">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_08_44_51&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_08_57_08&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_10_05_32&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_10_30_13&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_10_37_36&amp;xiaoshuo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1567" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state relative-caret-position="-1259">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#17#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
+    <entry file="file://$PROJECT_DIR$/ControlNode/UrlManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+        <state relative-caret-position="-608">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpiderNode/HtmlDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_11_02_15&amp;waiguowenxue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-916" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="50" column="62" lean-forward="true" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="62" />
           <folding>
             <element signature="e#17#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_11_19_58&amp;waiguowenxue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="90" column="434" lean-forward="true" selection-start-line="90" selection-start-column="434" selection-end-line="90" selection-end-column="434" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ControlNode/DataOutput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="483">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_08_11_15_55&amp;xiaoshuo.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ControlNode/UrlManager.py">
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_12_06_40&amp;xiaoshuo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1273" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderNode/SpiderWork.py">
+    <entry file="file://$PROJECT_DIR$/ControlNode/NodeManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+        <state relative-caret-position="394">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
           <folding>
             <element signature="e#17#62#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ControlNode/Douban_2018_09_09_12_12_06&amp;xiaoshuo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307" />
       </provider>
     </entry>
   </component>

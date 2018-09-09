@@ -3,7 +3,7 @@ from multiprocess.managers import BaseManager
 import time
 from multiprocessing import Process, Queue
 import config
-from pypinyin import pinyin, lazy_pinyin
+from pypinyin import lazy_pinyin
 
 from ControlNode.DataOutput import DataOutput
 from ControlNode.UrlManager import UrlManager
@@ -41,7 +41,7 @@ class NodeManager(object):
                     i = url_manager.old_url_size()/20
                     print('第%d个标签爬取完成！' % i)
                 # 加一个判断条件，当爬取指定的链接数目后就关闭，并保存进度
-                if(url_manager.old_url_size() > 20 * config.labels_number * config.page):  #  每页20本书
+                if(url_manager.old_url_size() > 20 * config.labels_number * config.page - 1):  #  每页20本书
                     # 通知爬虫结点工作结束
                     url_q.put('end')
                     print('控制节点发起结束通知！')
@@ -63,15 +63,21 @@ class NodeManager(object):
             try:
                 if not result_q.empty():
                     # Queue.get(block=True, timeout=None)
-                    content = result_q.get(True)
+                    content = result_q.get()
+                    # print(content)
                     if content['new_urls'] == 'end':
                         # 结果分析进程接受通知然后结束
                         print("结果分析进程接受通知然后结束！")
                         store_q.put('end')
                         return
-                    conn_q.put(content['new_urls'])  # url为set类型
+                    if content['new_urls'] == 'over':
+                        content = result_q.get()
+                        # print(content)
+                        store_q.put(content['data'])  # 解析出来的数据为dict类型
+                    conn_q.put(content['new_urls'])  # new_urls是dict类型
+                    # print(content['new_urls'])
                     labels_q.put(content['label'])
-                    store_q.put(content['data'])  # 解析出来的数据为dict类型
+                    # print(content['label'])
                 else:
                     time.sleep(0.5)  # 延时休息
             except BaseException as e:
@@ -81,25 +87,29 @@ class NodeManager(object):
         while True:
             if not labels_q.empty():
                 label = ''.join(lazy_pinyin(labels_q.get()))  # 数据库table好像不支持中文，所有找个库把汉字转换为拼音
+                print(label)
                 output = DataOutput(label)
                 output.output_head(output.filepath)
-                while True:
+                while(True):
                     if not store_q.empty():
-                        data = store_q.get()
-                        if data == 'end':
+                        dataset =store_q.get()
+                        print(dataset)
+                        if dataset == 'end':
                             print("存储进程然后结束！")
                             output.output_dbend()
                             return
-                        if data == 'over':
-                            print('%s标签下的数据存储结束' % label)
-                            output.output_end(output.filepath)
-                            break
-                        output.store_data(data)
-                        new_data = tuple(data.values())
-                        # 数据的存储需要以元组的形式，所以将数据从原来的dict转换为tuple
-                        output.store_data_todb(new_data)
+                        for data in dataset:
+                            print(data)
+                            output.store_data(data)
+                            new_data = tuple(data.values())
+                            # 数据的存储需要以元组的形式，所以将数据从原来的dict转换为tuple
+                            output.store_data_todb(new_data, label)
+                        print('%s标签下的数据存储结束' % label)
+                        output.output_end(output.filepath)
+                        break
                     else:
                         time.sleep(0.5)
+
 
 if __name__ == '__main__':
     # 初始化4个队列
